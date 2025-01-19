@@ -16,13 +16,13 @@ function RecipePage({ recipe }: { recipe: IRecipe }) {
       </Button>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <img
-          src={recipe.imageUrl}
+          src={recipe?.imageUrl}
           alt={"recipe title"}
           className="w-full h-64 object-cover rounded-lg"
         />
 
         <div>
-          <h2 className="text-3xl font-bold mb-4">{recipe.name}</h2>
+          <h2 className="text-3xl font-bold mb-4">{recipe?.name}</h2>
 
           <h3 className="text-xl font-semibold mb-3">Ingredients</h3>
           <ul className="list-disc pl-5 mb-6">
