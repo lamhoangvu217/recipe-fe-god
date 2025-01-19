@@ -1,10 +1,9 @@
 interface IRecipe {
   id: number,
-  title: string,
-  cuisine: string,
+  name: string,
   ingredients: string[],
   instructions: string[],
-  imageUrl: string
+  imageUrl: string,
+  cuisineID: number
 }
-
 export type { IRecipe }
